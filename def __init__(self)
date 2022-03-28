@@ -1,0 +1,25 @@
+# class User:
+#     pass
+#
+# user_1 = User()
+# user_1.id = "160702053" ## attribute
+# user_1.name = "ibrahim ahmethan" ## attribute
+
+# but the problem is what if we have a lot of users like user_2 user_3 and we need to specify
+# id, name, date of birt ets to all the users? should we write like this
+# user_1.id = "rewregwg", user_1name = "gwgrgtg"
+# user_2.id = "rewregwg", user_2name = "gwgrgtg"
+# user_3.id = "rewregwg", user_3name = "gwgrgtg"
+# this will take too much time instead we will use a constructor in class to overcome this problem.
+
+class User:
+    def __init__(self, id, username):
+        self.id = id
+        self.username = username
+
+user_1 = User("160702053","mugla siki kocam")
+user_2 = User("2699379","de montfort")
+
+print(user_1.username, user_1.id)
+print(user_2.username, user_2.id)
+#
