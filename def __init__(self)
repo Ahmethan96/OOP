@@ -49,3 +49,37 @@ print(user_1.following)
 print(user_2.followers)
 print(user_2.following)
 
+
+###############################################################################
+                            OOP vs without OOP
+###############################################################################
+
+class User:
+    def __init__(self, lastname, username):
+        print("Hello world")
+        self.lastname = lastname
+        self.username = username
+        self.followers = 0
+        self.following = 0
+
+    def follow(self, user):
+        pass
+
+
+
+user_1 = User("ahmethan", "ibrahim")
+user_one_first_name = "ibrahim"
+user_two_last_name = "ahmethan"
+# user_2 = User("002", "jack")
+
+
+print(user_1.username)
+print(user_1.lastname)
+
+print(user_one_first_name)
+print(user_two_last_name)
+
+# print(user_1.following)
+# print(user_1.followers)
+# print(user_2.username)
+
