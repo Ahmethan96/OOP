@@ -42,12 +42,16 @@ class User:
 user_1 = User("160702053","mugla siki kocam")
 user_2 = User("2699379","de montfort")
 
+print(user_1.__dict__)
+print(user_2.__dict__)
 user_1.follow(user_2)
 
 print(user_1.followers)
 print(user_1.following)
+print(user_1.__dict__)
 print(user_2.followers)
 print(user_2.following)
+print(user_2.__dict__)
 
 
 ###############################################################################
