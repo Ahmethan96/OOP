@@ -1,1 +1,22 @@
+class Animal:
+    def __init__(self):
+        self.num_of_eys = 2
 
+    def breath(self):
+        print("Inhale, Exhale ")
+
+class Fish(Animal):
+    def __init__(self):
+        super().__init__()
+
+    def breath(self):
+         # Animal().breath()
+         super().breath() # Animal().breath() is same
+         print("doing this under water ")
+
+    def swim(self):
+        print("swimming under the water")
+
+nemo = Fish()
+print(nemo.num_of_eys)
+print(nemo.breath())
